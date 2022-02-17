@@ -1,8 +1,8 @@
 {
   "kind": "Workflow",
-  "id": "ba516d78a1a52fff3d5ade7158b8160c",
+  "id": "5b38b38912c631bbb2264eeaee3c896a",
   "isDeleted": false,
-  "rev": "2-c8305f2fd9168ce2ff4b2b605dc81105",
+  "rev": "14-e50741a96923f84b2cdf90f72424d3a0",
   "description": "A basic STK workflow",
   "name": "STK_basic",
   "createdBy": "ginberg",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2022-02-10T09:22:42.781423Z"
+    "value": "2022-02-17T14:38:29.862082Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-02-10T09:22:43.115953Z"
+    "value": "2022-02-17T14:42:34.797882Z"
   },
   "urls": [
     {
@@ -31,18 +31,12 @@
     "kind": "Url",
     "uri": "https://github.com/tercen/STK_basic_template"
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "authors": [],
   "isPublic": false,
-  "projectId": "c845ceade32c4423bc616ff5ab191906",
-  "folderId": "",
+  "projectId": "9d141e68a5f551591cf270cdc9d883f4",
+  "folderId": "9182edbb22c84278dd63d2517e4eeb58",
   "links": [
-    {
-      "kind": "Link",
-      "id": "f15d43c7-269b-4587-ab4d-47549a97554d",
-      "inputId": "fb576727-ba22-4179-9a86-1936b1127cec-i-0",
-      "outputId": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb-o-0"
-    },
     {
       "kind": "Link",
       "id": "47c8c152-e9dd-4538-bf3e-ad19cb2ff766",
@@ -153,15 +147,21 @@
     },
     {
       "kind": "Link",
-      "id": "5149d46e-667a-4cdd-ae43-ca2956f8fc9d",
-      "inputId": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb-i-0",
+      "id": "d8b176d6-3d77-413f-9a4c-9893cb380a95",
+      "inputId": "5e3f2365-6daf-4581-9cc1-a72b48df1076-i-0",
       "outputId": "00a11ce0-85bb-11ec-9319-4b253dd31e66"
     },
     {
       "kind": "Link",
-      "id": "cc8443c1-d3cf-49e0-9899-e5a3f0998517",
-      "inputId": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb-i-1",
+      "id": "49bb462f-b547-412f-b28a-95baa79279a9",
+      "inputId": "5e3f2365-6daf-4581-9cc1-a72b48df1076-i-1",
       "outputId": "81d5f850-ae27-46c7-8e28-538d89cab8db-o-0"
+    },
+    {
+      "kind": "Link",
+      "id": "ea3b61f3-307f-4994-8b98-24ed65a19727",
+      "inputId": "fb576727-ba22-4179-9a86-1936b1127cec-i-0",
+      "outputId": "5e3f2365-6daf-4581-9cc1-a72b48df1076-o-0"
     }
   ],
   "steps": [
@@ -459,7 +459,7 @@
             "kind": "OperatorRef",
             "name": "Identity",
             "version": "0.0.1",
-            "operatorId": "c845ceade32c4423bc616ff5ab1876f9",
+            "operatorId": "9b71acd01fc31cc0c265a1190af0d55f",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -514,7 +514,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "3f97698b-6c37-4a88-a33a-35bec92817c7"
+        "id": "dd876888-4f31-4f27-bb3f-0347dd4458aa"
       }
     },
     {
@@ -754,7 +754,7 @@
             "kind": "OperatorRef",
             "name": "Log Cutoff",
             "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab188b42",
+            "operatorId": "9b71acd01fc31cc0c265a1190aefd2b8",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -825,85 +825,8 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "ba18541e-ed1a-47e4-b530-adc7e3b265ed"
+        "id": "2bf78b17-a463-4b16-9618-3f83404c24e2"
       }
-    },
-    {
-      "kind": "JoinStep",
-      "id": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb",
-      "groupId": "",
-      "name": "Join",
-      "inputs": [
-        {
-          "kind": "InputPort",
-          "id": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb-i-0",
-          "linkType": "relation",
-          "name": "leftTable"
-        },
-        {
-          "kind": "InputPort",
-          "id": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb-i-1",
-          "linkType": "relation",
-          "name": "rightTable"
-        }
-      ],
-      "outputs": [
-        {
-          "kind": "OutputPort",
-          "id": "6f8eb5bf-32e1-4cf6-bf7a-5343046282bb-o-0",
-          "linkType": "relation",
-          "name": "table"
-        }
-      ],
-      "rectangle": {
-        "kind": "Rectangle",
-        "extent": {
-          "kind": "Point",
-          "x": 88.99000000000001,
-          "y": 55.0
-        },
-        "topLeft": {
-          "kind": "Point",
-          "x": 727.998952636719,
-          "y": 512.5
-        }
-      },
-      "state": {
-        "kind": "StepState",
-        "taskId": "",
-        "taskState": {
-          "kind": "InitState"
-        }
-      },
-      "model": {
-        "kind": "JoinStepModel",
-        "leftFactors": [
-          {
-            "kind": "Factor",
-            "name": "ds0.Barcode",
-            "type": "string"
-          },
-          {
-            "kind": "Factor",
-            "name": "ds0.Row",
-            "type": "double"
-          }
-        ],
-        "rightFactors": [
-          {
-            "kind": "Factor",
-            "name": "Row",
-            "type": "double"
-          },
-          {
-            "kind": "Factor",
-            "name": "Barcode",
-            "type": "string"
-          }
-        ],
-        "rightPrefix": "js0"
-      },
-      "rightAttributes": []
     },
     {
       "kind": "TableStep",
@@ -928,8 +851,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 675.5050000000001,
-          "y": 222.5
+          "x": 676.5050000000001,
+          "y": 228.5
         }
       },
       "state": {
@@ -943,7 +866,7 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "8ac2d816-3241-48d8-8ab5-46492d257fe8",
+          "id": "112c31b5-ecac-4e05-9afe-0067112d9899",
           "relations": []
         }
       }
@@ -1162,7 +1085,7 @@
             "kind": "OperatorRef",
             "name": "ETS",
             "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab189d39",
+            "operatorId": "9b71acd01fc31cc0c265a1190ae7efe3",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -1206,7 +1129,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "ca64f911-6f27-44f3-bdd6-9c69758f2a36"
+        "id": "79f13c40-f2f3-47ea-8e43-cf4ef30b5977"
       }
     },
     {
@@ -1423,7 +1346,7 @@
             "kind": "OperatorRef",
             "name": "S100",
             "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab18b165",
+            "operatorId": "9b71acd01fc31cc0c265a1190ae7ff8a",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -1467,7 +1390,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b1e962f4-8a8f-43fc-b626-4d8a51ddd227"
+        "id": "addc5eb1-7e3c-431d-b2f3-a2c749294e43"
       }
     },
     {
@@ -1743,7 +1666,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "a3ffbcab-72b8-4313-92fe-811cce959473"
+        "id": "7bb158bf-61db-4919-9699-3a17531cc3de"
       }
     },
     {
@@ -2108,7 +2031,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "030b1dd5-7888-4223-932e-20e9fd6c0e9e"
+        "id": "54822d4d-45d3-4679-8d75-3a6a6a0e518c"
       }
     },
     {
@@ -2780,7 +2703,7 @@
             "kind": "OperatorRef",
             "name": "Nominal CV Estimate",
             "version": "0.0.1",
-            "operatorId": "c845ceade32c4423bc616ff5ab438aab",
+            "operatorId": "32686b39f178f64eef1bbd38448e783b",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -2851,7 +2774,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "6c365414-edc0-4a8e-a921-99e7a2a79351"
+        "id": "a606284a-b9d8-47c3-8ffb-99d5c4f1ec04"
       }
     },
     {
@@ -3070,7 +2993,7 @@
             "kind": "OperatorRef",
             "name": "Log Cutoff",
             "version": "0.0.1",
-            "operatorId": "c845ceade32c4423bc616ff5ab439b99",
+            "operatorId": "33fb64086c3295748ed979a87b61a753",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -3135,7 +3058,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "43d52850-237e-493b-a316-7a018aead637"
+        "id": "21834c23-9204-42b4-ae68-e3eae6d6847b"
       }
     },
     {
@@ -3446,7 +3369,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "24f04c8b-f87e-441c-9e39-7a48cbac23b6"
+        "id": "22d115ca-fd3a-4cbf-ac00-7dfeaa35d14b"
       }
     },
     {
@@ -3813,7 +3736,7 @@
             "kind": "OperatorRef",
             "name": "Check input 1 operator",
             "version": "0.0.2",
-            "operatorId": "c845ceade32c4423bc616ff5ab43a369",
+            "operatorId": "32686b39f178f64eef1bbd3844b1317d",
             "operatorKind": "ROperator",
             "propertyValues": [],
             "url": {
@@ -3857,7 +3780,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "b356a958-6575-4021-8c17-99996cf7ecba"
+        "id": "258dbfb7-4249-40c4-be4c-c8113135888f"
       }
     },
     {
@@ -4162,7 +4085,7 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 847.505,
+          "x": 846.5050000000001,
           "y": 415.5
         }
       },
@@ -4177,15 +4100,92 @@
         "kind": "TableStepModel",
         "relation": {
           "kind": "UnionRelation",
-          "id": "60850c4a-a8b2-476f-ac01-fe3e16bdc417",
+          "id": "d0def249-2bf5-4032-8bec-bb4aebcd9a48",
           "relations": []
         }
       }
+    },
+    {
+      "kind": "JoinStep",
+      "id": "5e3f2365-6daf-4581-9cc1-a72b48df1076",
+      "groupId": "",
+      "name": "Join",
+      "inputs": [
+        {
+          "kind": "InputPort",
+          "id": "5e3f2365-6daf-4581-9cc1-a72b48df1076-i-0",
+          "linkType": "relation",
+          "name": "leftTable"
+        },
+        {
+          "kind": "InputPort",
+          "id": "5e3f2365-6daf-4581-9cc1-a72b48df1076-i-1",
+          "linkType": "relation",
+          "name": "rightTable"
+        }
+      ],
+      "outputs": [
+        {
+          "kind": "OutputPort",
+          "id": "5e3f2365-6daf-4581-9cc1-a72b48df1076-o-0",
+          "linkType": "relation",
+          "name": "table"
+        }
+      ],
+      "rectangle": {
+        "kind": "Rectangle",
+        "extent": {
+          "kind": "Point",
+          "x": 88.99000000000001,
+          "y": 55.0
+        },
+        "topLeft": {
+          "kind": "Point",
+          "x": 725.7593515014651,
+          "y": 514.5
+        }
+      },
+      "state": {
+        "kind": "StepState",
+        "taskId": "",
+        "taskState": {
+          "kind": "InitState"
+        }
+      },
+      "model": {
+        "kind": "JoinStepModel",
+        "leftFactors": [
+          {
+            "kind": "Factor",
+            "name": "ds0.Barcode",
+            "type": "string"
+          },
+          {
+            "kind": "Factor",
+            "name": "ds0.Row",
+            "type": "double"
+          }
+        ],
+        "rightFactors": [
+          {
+            "kind": "Factor",
+            "name": "Barcode",
+            "type": "string"
+          },
+          {
+            "kind": "Factor",
+            "name": "Row",
+            "type": "double"
+          }
+        ],
+        "rightPrefix": "js0"
+      },
+      "rightAttributes": []
     }
   ],
   "offset": {
     "kind": "Point",
-    "x": -355.0,
-    "y": -127.0
+    "x": -352.0,
+    "y": -129.0
   }
 }
